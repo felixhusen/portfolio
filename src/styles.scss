@@ -1,0 +1,26 @@
+/* Global Stylesheet file */
+@import './assets/fonts/Roboto/stylesheet.css';
+@import './variables.scss';
+
+body {
+	font-family: $primaryFont, sans-serif;
+	font-weight: $regular;
+	font-size: $primary-fs;
+}
+
+.primary-button {
+	letter-spacing: 1px;
+	border-radius: 4px;
+	transition: $transitionStyle1;
+	background-color: rgba($primaryColor, 1);
+	padding: 10px 15px;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.primary-button:hover {
+	transition: $transitionStyle1;
+	background-color: rgba($primaryColor, 0.8);
+	color: #fff;
+	text-decoration: none;
+}

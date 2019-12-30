@@ -1,0 +1,63 @@
+@import '../../variables.scss';
+
+.navbar {
+
+	padding: 30px 10px;
+	display: flex;
+
+	.navbar-brand {
+		img {
+			width: 85px;
+		}
+	}
+
+	.navbar-collapse {
+		justify-content: flex-end;
+	}
+
+	.nav-link {
+		transition: $transitionStyle1;
+		color: rgba(0,0,0,0.8);
+		padding: 0px 15px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: $font-sm;
+		font-weight: $regular;
+	}
+
+	.nav-link:hover {
+		transition: $transitionStyle1;
+		color: rgba(0,0,0,1);
+	}
+
+	.nav-link::after {
+		content: '';
+		transition: $transitionStyle1;
+		display: block;
+		width: 0;
+		height: 2px;
+		background: #000;
+		transition: width .3s;
+		margin-top: 5px;
+	}
+
+	.nav-link:hover::after {
+		width: 100%;
+	}
+
+	.active .nav-link::after {
+		color: rgba(0,0,0,1);
+		width: 100%;
+	}
+
+	.navbar-toggler {
+		outline: none;
+		border: 0px;
+		color: rgba(0,0,0,0.8);
+	}
+
+	.navbar-toggler:hover {
+		color: rgba(0,0,0,1);
+	}
+}
+
