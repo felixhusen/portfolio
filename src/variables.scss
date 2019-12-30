@@ -2,6 +2,8 @@
 
 /* Colors */
 $primaryColor: #10acf3;
+$footerColor: #292b2c;
+$copyrightFooterColor: #000;
 
 /* Fonts */
 
@@ -24,3 +26,7 @@ $font-lg: 20px;
 /* Transitions */
 
 $transitionStyle1: all 0.3s ease 0s;
+
+/* Border box */
+
+$dropShadow: 0px 0px 11px 0px rgba(0,0,0,0.31);

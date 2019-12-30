@@ -1,0 +1,55 @@
+@import '../../variables.scss';
+
+.footer {
+	background-color: $footerColor;
+	color: #fff;
+	padding: 20px 0px;
+	text-align: center;
+
+	.nav-link {
+		display: inline-block;
+		padding: 0px 10px;
+		color: rgba(255,255,255,0.8);
+		letter-spacing: 2px;
+		font-weight: $light;
+		transition: $transitionStyle1;
+	}
+
+	.nav-link:hover {
+		color: rgba(255,255,255,1);
+	}
+
+	.nav-link::after {
+		content: '';
+		transition: $transitionStyle1;
+		display: block;
+		width: 0;
+		height: 3px;
+		background: $primaryColor;
+		transition: width .3s;
+		margin-top: 0px;
+	}
+
+	.nav-link:hover::after {
+		width: 100%;
+	}
+
+	.nav-links {
+		margin: 20px 0px;
+	}
+}
+
+.copyright-footer {
+	padding: 20px 0px;
+	background-color: $copyrightFooterColor;
+	color: rgba(255,255,255,0.8);
+	text-align: center;
+
+	.copyright-text {
+		margin: 0;
+		font-size: $font-sm;
+		font-weight: $medium;
+		letter-spacing: 1px;
+		vertical-align: middle;
+	}
+}

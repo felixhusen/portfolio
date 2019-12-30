@@ -6,6 +6,12 @@ body {
 	font-family: $primaryFont, sans-serif;
 	font-weight: $regular;
 	font-size: $primary-fs;
+	border-box: box-sizing;
+}
+
+::selection {
+	color: #fff;
+  	background: $primaryColor;
 }
 
 .primary-button {
@@ -23,4 +29,5 @@ body {
 	background-color: rgba($primaryColor, 0.8);
 	color: #fff;
 	text-decoration: none;
+	box-shadow: $dropShadow;
 }
