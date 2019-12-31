@@ -14,6 +14,10 @@ body {
   	background: $primaryColor;
 }
 
+.navbar-space {
+	height: 120px;
+}
+
 .primary-button {
 	letter-spacing: 1px;
 	border-radius: 4px;
@@ -29,5 +33,18 @@ body {
 	background-color: rgba($primaryColor, 0.8);
 	color: #fff;
 	text-decoration: none;
+	box-shadow: $dropShadow;
+}
+
+.outlined-button {
+	transition: $transitionStyle1;
+	border: 2px solid $primaryColor;
+	border-radius: 0px;
+	color: $primaryColor;
+}
+
+.outlined-button:hover {
+	background-color: $primaryColor;
+	color: #fff;
 	box-shadow: $dropShadow;
 }
