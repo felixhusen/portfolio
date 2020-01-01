@@ -10,13 +10,23 @@
 		  </button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
-				<li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="/portfolio">Portfolio</a></li>
-				<li class="nav-item"><a class="nav-link" href="/about-me">About Me</a></li>
+				<li
+				[ngClass]="
+					routerUrl == '/' ? 
+					'nav-item active' : 'nav-item'
+				"><a class="nav-link" href="/">Home</a></li>
+				<li [ngClass]="
+					routerUrl == '/portfolio' ? 
+					'nav-item active' : 'nav-item'
+				"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+				<li [ngClass]="
+					routerUrl == '/about-me' ? 
+					'nav-item active' : 'nav-item'
+				"><a class="nav-link" href="/about-me">About Me</a></li>
 				<li class="nav-item"><a class="nav-link" href="http://linkedin.com/in/felixhusen"><i class="fa fa-linkedin"></i></a></li>
 				<li class="nav-item"><a class="nav-link" href="http://github.com/felixhusen"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 			</ul>
-			<a class="primary-button" href="#" role="button">Call Me</a>
+			<a class="primary-button" href="tel:+61452492934" role="button">Contact Me</a>
 		</div>
 		
 	</div>
