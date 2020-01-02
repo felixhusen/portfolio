@@ -1,14 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light" [ngClass]="{ 'bg-white' : navbarOpen }">
 	<div class="container">
 		<div class="navbar-brand">
 			<a href="/">
 				<img src="../../assets/images/logo.png" alt="Logo" />
 			</a>
 		</div>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<i class="fa fa-bars" aria-hidden="true"></i>
-		  </button>
-		<div class="collapse navbar-collapse" id="navbarNav">
+		<button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+			☰
+		</button>
+		<div class="collapse navbar-collapse show" [ngClass]="{ 'show': navbarOpen }">
 			<ul class="navbar-nav">
 				<li
 				[ngClass]="

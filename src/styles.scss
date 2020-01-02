@@ -9,6 +9,10 @@ body {
 	border-box: box-sizing;
 }
 
+.bg-white {
+	background-color: #fff;
+}
+
 ::selection {
 	color: #fff;
   	background: $primaryColor;

@@ -7,11 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+
+	navbarOpen: boolean = false;
 	routerUrl: string = '/';
 
 	constructor(private router: Router) {
 		// Assigning the current url to the routerUrl
 		this.routerUrl = this.router.url;
+	}
+
+	toggleNavbar() {
+		this.navbarOpen = !this.navbarOpen;
 	}
 
 	ngOnInit() {}
