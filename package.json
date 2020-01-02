@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "postinstall":"ng build --aot --prod",
+    "postinstall": "ng build --aot --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -22,6 +22,7 @@
     "@angular/router": "~8.2.14",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0",
