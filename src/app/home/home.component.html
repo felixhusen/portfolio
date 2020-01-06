@@ -17,33 +17,9 @@
 		<hr class="line"/>
 		<p class="secondary-text">These are some of the works that i haved worked on recently</p>
 		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-4 p-3">
-				<div class="card text-white h-100">
-					<img class="card-img" src="../../assets/images/milenialglobalpro.png" alt="Milenial Global Pro" />
-					<div class="card-img-overlay">
-						<h5 class="card-title">Milenial Global Pro</h5>
-						<a href="http://milenialglobalpro.com" class="btn outlined-button">Open</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 p-3">
-				<div class="card text-white">
-					<img class="card-img" src="../../assets/images/brainwaveaffirmation.png" alt="Affirmation with Brainwaves" />
-					<div class="card-img-overlay">
-						<h5 class="card-title">Affirmation with Brainwaves</h5>
-						<a href="https://play.google.com/store/apps/details?id=com.paffirmation" class="btn outlined-button">Open</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 p-3">
-				<div class="card text-white">
-					<img class="card-img" src="../../assets/images/financialcalculator.png" alt="Financial Calculator" />
-					<div class="card-img-overlay">
-						<h5 class="card-title">Financial Calculator</h5>
-						<a href="https://play.google.com/store/apps/details?id=com.ffx.fcalculator" class="btn outlined-button">Open</a>
-					</div>
-				</div>
-			</div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 p-3" *ngFor="let project of projects">
+        <project [item]="project"></project>
+      </div>
 		</div>
 	</div>
 </div>

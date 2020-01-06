@@ -1,0 +1,20 @@
+@import '../../../variables.scss';
+
+.project-item {
+    .project-name {
+        font-weight: $light;
+        margin-top: 20px;
+        letter-spacing: 1px;
+    }
+
+    .project-image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .project-link {
+        color: #000;
+        text-decoration: none;
+    }
+}
