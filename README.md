@@ -1,6 +1,8 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This is a portfolio website project for felixhusen.
+
+This can be accessed at: http://felixhusen.herokuapp.com
 
 ## Development server
 
